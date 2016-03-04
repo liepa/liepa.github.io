@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+div {
+  background: #e4e4e4;
+  border: 1px solid gray;
+}
+
+pre {
+  background: #fff;
+}
+
+.row, .col {
+  padding: 20px;
+}
+
+.container {
+  padding: 0;
+  border: none;
+}
+
+.main {
+  min-height: 100%;
+}
