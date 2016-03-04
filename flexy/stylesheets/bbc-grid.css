@@ -1,0 +1,47 @@
+div { border: none; }
+
+.logo {
+  max-width: 100px;
+}
+
+.search {
+  max-width: 300px;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+}
+
+h4 {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.section__wrap {
+  width: 100%;
+}
+
+.section__wrap--white,
+.section__wrap--white .content,
+.section__wrap--white .col {
+  background: #fff;
+}
+
+section {
+  padding: 20px;
+}
+
+.img {
+  height: 200px;
+}
