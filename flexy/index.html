@@ -3,33 +3,35 @@
 <head>
   <title>Flexy</title>
   <link rel="stylesheet" type="text/css" href="vendor/flat-ui/css/flat-ui.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/flexy.css">
+  <link rel="stylesheet" type="text/css" href="../submodules/flexy/stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../submodules/flexy/stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="../submodules/flexy/stylesheets/flexy.css">
 </head>
 <body>
   <div class="main container container__rows">
     <div class="palette palette-turquoise">
-      <h1>Flexbox layout with BEM using defined classes</h1>
+      <h1>Simple Flexbox layout with BEM</h1>
+      <p>Colors by flat-ui</p>
     </div>
     <div>
       Not flex, so fixed height
       <pre>
-        .container { display: flex; }
-        .container__rows { flex-direction: column; }
-        .container__cols { flex-direction: row; }
+        .container__rows { display: flex; flex-direction: column; }
+        .container__cols { display: flex; flex-direction: row; }
         .row { flex: 1; }
         .col { flex: 1; }
+        .container--wrap { flex-wrap: wrap; }
+        .container--wrap .col { flex: 1 0 auto; }
       </pre>
     </div>
 
     <div class="row container container__rows">
       <div class="row palette palette-amethyst">Row1</div>
-      <div class="row container container__cols">
-        <div class="col palette palette-clouds">Row2 : Col1</div>
-        <div class="col palette palette-silver">Row2 : Col2</div>
-        <div class="col palette palette-concrete">Row2 : Col3</div>
-        <div class="col palette palette-asbestos">Row2 : Col4
+      <div class="row container container__cols container--wrap">
+        <div class="col palette palette-clouds">Row2 : Col1 (will wrap)</div>
+        <div class="col palette palette-silver">Row2 : Col2 (will wrap)</div>
+        <div class="col palette palette-concrete">Row2 : Col3 (will wrap)</div>
+        <div class="col palette palette-asbestos">Row2 : Col4 (will wrap)
           <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div>
