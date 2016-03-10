@@ -1,11 +1,11 @@
 div { border: none; }
 
 .logo {
-  max-width: 100px;
+  min-width: 100px;
 }
 
 .search {
-  max-width: 300px;
+  min-width: 300px;
 }
 
 .nav {
@@ -18,7 +18,7 @@ div { border: none; }
 }
 
 .content {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 20px 0 20px;
 }

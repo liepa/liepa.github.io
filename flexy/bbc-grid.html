@@ -3,16 +3,16 @@
 <head>
   <title>Flexy - grid1 (BBC)</title>
   <link rel="stylesheet" type="text/css" href="vendor/flat-ui/css/flat-ui.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/flexy.css">
+  <link rel="stylesheet" type="text/css" href="../submodules/flexy/stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../submodules/flexy/stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="../submodules/flexy/stylesheets/flexy.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/bbc-grid.css">
 </head>
 <body>
   <div class="main container container__rows">
-    <nav class="palette palette-turquoise container container_cols">
+    <nav class="container container__cols container--wrap">
       <div class="logo palette palette-carrot col">Logo</div>
-      <ul class="nav col">
+      <ul class="nav col palette palette-turquoise">
         <li>News</li>
         <li>Sport</li>
         <li>Weather</li>
@@ -29,7 +29,7 @@
       <div class="content">
         <h4>Section title</h4>
         <section class="row container container__cols">
-          <div class="col palette palette-silver">
+          <div class="col palette palette-silver col--large">
             <h2>Article one with big title</h2>
             <p>Some intro text</p>
             <a href="#">Some link to article</a>
@@ -70,7 +70,7 @@
       <div class="content">
         <h4>Second section title</h4>
         <section class="row container container__rows">
-          <div class="row container container__cols">
+          <div class="row container container__cols container--wrap">
             <div class="col">
               <div class="img palette palette-silver"></div>
               <h5>Second section smaller title</h5>
@@ -92,7 +92,7 @@
               <a href="#">Some link to article</a>
             </div>
           </div>
-          <div class="row container container__cols">
+          <div class="row container container__cols container--wrap">
             <div class="col">
               <div class="img palette palette-silver"></div>
               <h5>Second section smaller title</h5>
