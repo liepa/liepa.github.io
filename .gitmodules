@@ -1,0 +1,3 @@
+[submodule "submodules/flexy"]
+	path = submodules/flexy
+	url = git@github.com:liepa/flexy.git
